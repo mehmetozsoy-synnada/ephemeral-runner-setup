@@ -10,7 +10,6 @@ env:
   CI: true
 jobs:  
 
-
   build:
     runs-on: self-hosted
     strategy:
