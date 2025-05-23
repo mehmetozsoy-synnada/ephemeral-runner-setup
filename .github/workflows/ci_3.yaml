@@ -9,25 +9,10 @@ on:
 env:
   CI: true
 jobs:
-
-
-
-  
-
-
   build:
     runs-on: runner-${{ github.run_id }}
     strategy:
-
-
       matrix:
-
-
-        
-
-
-
-
         python-version: [3.12]
     steps:
       - name: Check out repository
@@ -36,6 +21,8 @@ jobs:
           submodules: 'recursive'
 
 
+
+          
 
       - name: test step 1
         run: sleep 60
