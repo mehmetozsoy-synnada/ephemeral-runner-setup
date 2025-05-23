@@ -23,6 +23,8 @@ jobs:
         
 
 
+
+
         python-version: [3.12]
     steps:
       - name: Check out repository
@@ -33,4 +35,4 @@ jobs:
 
 
       - name: test step 1
-        run: sleep 40
+        run: sleep 60
