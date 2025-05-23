@@ -9,7 +9,7 @@ env:
   CI: true
 jobs:
   build:
-    runs-on: runner-${{ github.job }}
+    runs-on: runner-${{ github.run_id }}
     strategy:
       matrix:
         python-version: [3.12]
