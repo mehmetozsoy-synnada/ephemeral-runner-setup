@@ -13,7 +13,7 @@ jobs:
 
 
   build:
-    runs-on: runner-${{ github.job }}
+    runs-on: runner-${{ github.run_id }}
     strategy:
 
 
