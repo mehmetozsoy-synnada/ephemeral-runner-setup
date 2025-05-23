@@ -9,9 +9,7 @@ env:
   CI: true
 jobs:
   build:
-
-    
-    runs-on: self-hosted
+    runs-on: runner-${{ github.job }}
     strategy:
       matrix:
         python-version: [3.12]
@@ -21,4 +19,6 @@ jobs:
         with:
           submodules: 'recursive'
       - name: test step 1
-        run: sleep 100
+        run: |
+          sleep 100
+          echo ${{ github.run_id }}
