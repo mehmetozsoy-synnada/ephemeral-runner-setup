@@ -11,7 +11,7 @@ env:
 jobs:  
 
   build:
-    runs-on: runner-${{ github.run_id }}
+    runs-on: runner-macos-${{ github.run_id }}
     strategy:
       matrix:
         python-version: [3.12]
